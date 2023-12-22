@@ -1,6 +1,6 @@
 // const mongoose = require("mongoose")
 
-// mongoose.connect("mongodb://127.0.0.1:27017/Sachinkhapariye",{
+// mongoose.connect("",{
 //     useNewUrlParser:true,
 //     useUnifiedTopology:true,
 // }).then(()=>{
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === 'production') {
   dbUrl = process.env.MONGODB_URI;
 } else {
   // Use local MongoDB URI for development
-  dbUrl = "mongodb://127.0.0.1:27017/Sachinkhapariye";
+  dbUrl = "";
 }
 
 mongoose.connect(dbUrl, {
